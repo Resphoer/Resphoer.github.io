@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="算法,数据结构," />
 
 
 
@@ -79,14 +79,18 @@
 
 
 
-<meta name="description" content="Coding For Fun">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Resphoer&#39;s Space">
-<meta property="og:url" content="http://example.com/">
+<meta name="description" content="线性表1. 顺序表及其应用1.1 二进制求和给你两个二进制字符串 a 和 b ，以二进制字符串的形式返回它们的和。  思路 进行二进制位运算，本位和s&#x3D;a^b^c，进位c&#x3D;(a&amp;b)|(a&amp;c)|(b&amp;c)。 注意处理边界问题。 代码 12345678910111213141516class Solution &amp;#123;    public String addBinar">
+<meta property="og:type" content="article">
+<meta property="og:title" content="线性表">
+<meta property="og:url" content="http://example.com/LeetCode/%E7%BA%BF%E6%80%A7%E8%A1%A8/">
 <meta property="og:site_name" content="Resphoer&#39;s Space">
-<meta property="og:description" content="Coding For Fun">
+<meta property="og:description" content="线性表1. 顺序表及其应用1.1 二进制求和给你两个二进制字符串 a 和 b ，以二进制字符串的形式返回它们的和。  思路 进行二进制位运算，本位和s&#x3D;a^b^c，进位c&#x3D;(a&amp;b)|(a&amp;c)|(b&amp;c)。 注意处理边界问题。 代码 12345678910111213141516class Solution &amp;#123;    public String addBinar">
 <meta property="og:locale">
+<meta property="article:published_time" content="2023-03-22T03:10:23.124Z">
+<meta property="article:modified_time" content="2023-03-31T06:15:13.776Z">
 <meta property="article:author" content="Resphoer">
+<meta property="article:tag" content="算法">
+<meta property="article:tag" content="数据结构">
 <meta name="twitter:card" content="summary">
 
 
@@ -117,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://example.com/"/>
+  <link rel="canonical" href="http://example.com/LeetCode/线性表/"/>
 
 
 
 
 
-  <title>Resphoer's Space</title>
+  <title>线性表 | Resphoer's Space</title>
   
 
 
@@ -146,8 +150,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -270,354 +273,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/LeetCode/%E6%A0%88%E4%B8%8E%E9%98%9F%E5%88%97/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Resphoer's Space">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/LeetCode/%E6%A0%88%E4%B8%8E%E9%98%9F%E5%88%97/" itemprop="url">栈与队列</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-04-02T09:37:45+08:00">
-                2023-04-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/LeetCode/" itemprop="url" rel="index">
-                    <span itemprop="name">LeetCode</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="栈与队列"><a href="#栈与队列" class="headerlink" title="栈与队列"></a>栈与队列</h1><h2 id="1-栈的实现"><a href="#1-栈的实现" class="headerlink" title="1. 栈的实现"></a>1. 栈的实现</h2><h3 id="1-1-设计一个支持增量操作的栈"><a href="#1-1-设计一个支持增量操作的栈" class="headerlink" title="1.1 设计一个支持增量操作的栈"></a>1.1 设计一个支持增量操作的栈</h3><p>请你设计一个支持对其元素进行增量操作的栈。</p>
-<p>实现自定义栈类 <code>CustomStack</code> ：</p>
-<ul>
-<li><code>CustomStack(int maxSize)</code>：用 <code>maxSize</code> 初始化对象，<code>maxSize</code> 是栈中最多能容纳的元素数量。</li>
-<li><code>void push(int x)</code>：如果栈还未增长到 <code>maxSize</code> ，就将 <code>x</code> 添加到栈顶。</li>
-<li><code>int pop()</code>：弹出栈顶元素，并返回栈顶的值，或栈为空时返回 <strong>-1</strong> 。</li>
-<li><code>void inc(int k, int val)</code>：栈底的 <code>k</code> 个元素的值都增加 <code>val</code> 。如果栈中元素总数小于 <code>k</code> ，则栈中的所有元素都增加 <code>val</code> 。</li>
-</ul>
-<p><strong>思路</strong></p>
-<p>使用数组进行模拟即可。</p>
-<p><strong>代码</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">CustomStack</span> &#123;</span><br><span class="line">    List&lt;Integer&gt; stack;</span><br><span class="line">    <span class="type">int</span> size;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">CustomStack</span><span class="params">(<span class="type">int</span> maxSize)</span> &#123;</span><br><span class="line">        stack=<span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;(maxSize);</span><br><span class="line">        size=maxSize; </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">push</span><span class="params">(<span class="type">int</span> x)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span>(stack.size()&lt;size)&#123;</span><br><span class="line">            stack.add(x);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">pop</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> stack.isEmpty()?-<span class="number">1</span>:stack.remove(stack.size()-<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">increment</span><span class="params">(<span class="type">int</span> k, <span class="type">int</span> val)</span> &#123;</span><br><span class="line">        <span class="comment">// k与栈中元素个数取较小值</span></span><br><span class="line">        <span class="type">int</span> s=stack.size()&lt;k?stack.size():k;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;s;i++)&#123;</span><br><span class="line">            stack.set(i,stack.get(i)+val);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your CustomStack object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * CustomStack obj = new CustomStack(maxSize);</span></span><br><span class="line"><span class="comment"> * obj.push(x);</span></span><br><span class="line"><span class="comment"> * int param_2 = obj.pop();</span></span><br><span class="line"><span class="comment"> * obj.increment(k,val);</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="1-2-最小栈"><a href="#1-2-最小栈" class="headerlink" title="1.2 最小栈"></a>1.2 最小栈</h3><p>设计一个支持 <code>push</code> ，<code>pop</code> ，<code>top</code> 操作，并能在常数时间内检索到最小元素的栈。</p>
-<p>实现 <code>MinStack</code> 类:</p>
-<ul>
-<li><code>MinStack()</code> 初始化堆栈对象。</li>
-<li><code>void push(int val)</code> 将元素val推入堆栈。</li>
-<li><code>void pop()</code> 删除堆栈顶部的元素。</li>
-<li><code>int top()</code> 获取堆栈顶部的元素。</li>
-<li><code>int getMin()</code> 获取堆栈中的最小元素。</li>
-</ul>
-<p><strong>思路</strong></p>
-<p>维护两个栈，一个是当前栈，一个是最小栈。</p>
-<p><strong>代码</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MinStack</span> &#123;</span><br><span class="line">    Deque&lt;Integer&gt; stack;</span><br><span class="line">    Deque&lt;Integer&gt; minStack;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MinStack</span><span class="params">()</span> &#123;</span><br><span class="line">        stack=<span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">        minStack=<span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">        <span class="comment">// 最小栈中预先存入int最大值，这样不必判断栈是否为空</span></span><br><span class="line">        minStack.push(Integer.MAX_VALUE);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">push</span><span class="params">(<span class="type">int</span> val)</span> &#123; </span><br><span class="line">        <span class="comment">// 入栈操作</span></span><br><span class="line">        stack.push(val);</span><br><span class="line">        <span class="comment">// 最小栈更新当前最小值</span></span><br><span class="line">        minStack.push(minStack.peek()&lt;=val?minStack.peek():val);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">pop</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 出栈</span></span><br><span class="line">        stack.pop();</span><br><span class="line">        minStack.pop();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">top</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 返回当前栈顶元素</span></span><br><span class="line">        <span class="keyword">return</span> stack.peek();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getMin</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 返回最小元素</span></span><br><span class="line">        <span class="keyword">return</span> minStack.peek();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your MinStack object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * MinStack obj = new MinStack();</span></span><br><span class="line"><span class="comment"> * obj.push(val);</span></span><br><span class="line"><span class="comment"> * obj.pop();</span></span><br><span class="line"><span class="comment"> * int param_3 = obj.top();</span></span><br><span class="line"><span class="comment"> * int param_4 = obj.getMin();</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="2-栈的应用"><a href="#2-栈的应用" class="headerlink" title="2. 栈的应用"></a>2. 栈的应用</h2><h3 id="2-1-有效的括号"><a href="#2-1-有效的括号" class="headerlink" title="2.1 有效的括号"></a>2.1 有效的括号</h3><p>给定一个只包括 <code>&#39;(&#39;</code>，<code>&#39;)&#39;</code>，<code>&#39;&#123;&#39;</code>，<code>&#39;&#125;&#39;</code>，<code>&#39;[&#39;</code>，<code>&#39;]&#39;</code> 的字符串 <code>s</code> ，判断字符串是否有效。</p>
-<p>有效字符串需满足：</p>
-<ol>
-<li>左括号必须用相同类型的右括号闭合。</li>
-<li>左括号必须以正确的顺序闭合。</li>
-<li>每个右括号都有一个对应的相同类型的左括号。</li>
-</ol>
-<p><strong>思路</strong></p>
-<p>使用栈进行模拟，每次比较栈顶元素与当前元素是否配对。</p>
-<p><strong>代码</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">isValid</span><span class="params">(String s)</span> &#123;</span><br><span class="line">        Deque&lt;Character&gt; hep=<span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">        <span class="type">int</span> n=s.length();</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            <span class="type">char</span> k=s.charAt(i);</span><br><span class="line">            <span class="comment">// 若为左括号，直接入栈</span></span><br><span class="line">            <span class="keyword">if</span>(k==<span class="string">&#x27;(&#x27;</span>||k==<span class="string">&#x27;[&#x27;</span>||k==<span class="string">&#x27;&#123;&#x27;</span>)&#123;</span><br><span class="line">                hep.push(k);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;<span class="comment">// 若为右括号，需判断</span></span><br><span class="line">                <span class="comment">// 栈空，说明不配对，返回false</span></span><br><span class="line">                <span class="keyword">if</span>(hep.isEmpty())&#123;</span><br><span class="line">                    <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    <span class="type">char</span> r=hep.poll();</span><br><span class="line">                    <span class="comment">// 判断元素是否配对</span></span><br><span class="line">                    <span class="keyword">if</span>((k==<span class="string">&#x27;)&#x27;</span>&amp;&amp;r==<span class="string">&#x27;(&#x27;</span>)||(k==<span class="string">&#x27;]&#x27;</span>&amp;&amp;r==<span class="string">&#x27;[&#x27;</span>)||(k==<span class="string">&#x27;&#125;&#x27;</span>&amp;&amp;r==<span class="string">&#x27;&#123;&#x27;</span>))&#123;</span><br><span class="line">                        <span class="keyword">continue</span>;</span><br><span class="line">                    &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 栈空说明表达式有效，否则还有元素残留在栈中则无效</span></span><br><span class="line">        <span class="keyword">return</span> hep.isEmpty();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="2-2-移除无效的括号"><a href="#2-2-移除无效的括号" class="headerlink" title="2.2 移除无效的括号"></a>2.2 移除无效的括号</h3><p>给你一个由 <code>&#39;(&#39;</code>、<code>&#39;)&#39;</code> 和小写字母组成的字符串 <code>s</code>。</p>
-<p>你需要从字符串中删除最少数目的 <code>&#39;(&#39;</code> 或者 <code>&#39;)&#39;</code> （可以删除任意位置的括号)，使得剩下的「括号字符串」有效。</p>
-<p>请返回任意一个合法字符串。</p>
-<p>有效「括号字符串」应当符合以下 <strong>任意一条</strong> 要求：</p>
-<ul>
-<li>空字符串或只包含小写字母的字符串</li>
-<li>可以被写作 <code>AB</code>（<code>A</code> 连接 <code>B</code>）的字符串，其中 <code>A</code> 和 <code>B</code> 都是有效「括号字符串」</li>
-<li>可以被写作 <code>(A)</code> 的字符串，其中 <code>A</code> 是一个有效的「括号字符串」</li>
-</ul>
-<p><strong>思路</strong></p>
-<p>栈思想模拟，仅一种括号类型，无需使用栈，仅需一个变量存储当前状态即可。</p>
-<p>首先删除多余的<code>)</code>，然后根据<code>left</code>的数量删除多余的左括号。</p>
-<p>注意：删除左括号时，要从字符串末尾开始删除，因为从左往右遍历，若左括号多余，则是右端先多出左括号。</p>
-<p><strong>代码</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> String <span class="title function_">minRemoveToMakeValid</span><span class="params">(String s)</span> &#123;</span><br><span class="line">        <span class="type">int</span> n=s.length();</span><br><span class="line">        <span class="type">int</span> left=<span class="number">0</span>;</span><br><span class="line">        StringBuilder cnt=<span class="keyword">new</span> <span class="title class_">StringBuilder</span>();</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            <span class="type">char</span> k=s.charAt(i);</span><br><span class="line">            <span class="comment">// 左括号加入字符串中，后期再处理是否多余</span></span><br><span class="line">            <span class="keyword">if</span>(k==<span class="string">&#x27;(&#x27;</span>)&#123;</span><br><span class="line">                cnt.append(k);</span><br><span class="line">                left++;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(k==<span class="string">&#x27;)&#x27;</span>)&#123;</span><br><span class="line">                <span class="comment">// 判断右括号是否能加入字符串中</span></span><br><span class="line">                <span class="keyword">if</span>(left==<span class="number">0</span>)&#123;<span class="comment">// 左括号数量为0，无法加入</span></span><br><span class="line">                    <span class="keyword">continue</span>;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    <span class="comment">// 若加入，那么左括号数量减一</span></span><br><span class="line">                    left--;</span><br><span class="line">                    cnt.append(k);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                cnt.append(k);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> over=left;</span><br><span class="line">        <span class="type">int</span> size=cnt.length();</span><br><span class="line">        StringBuilder target=<span class="keyword">new</span> <span class="title class_">StringBuilder</span>();</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=size-<span class="number">1</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line">            <span class="comment">// 多余左括号处理</span></span><br><span class="line">            <span class="keyword">if</span>(over&gt;<span class="number">0</span>&amp;&amp;cnt.charAt(i)==<span class="string">&#x27;(&#x27;</span>)&#123;</span><br><span class="line">                over--;</span><br><span class="line">                <span class="keyword">continue</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            target.append(cnt.charAt(i));</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 由于从右往左遍历，字符串需要反转</span></span><br><span class="line">        <span class="keyword">return</span> target.reverse().toString();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="2-3-验证栈序列"><a href="#2-3-验证栈序列" class="headerlink" title="2.3 验证栈序列"></a>2.3 验证栈序列</h3><p>给定 <code>pushed</code> 和 <code>popped</code> 两个序列，每个序列中的 <strong>值都不重复</strong>，只有当它们可能是在最初空栈上进行的推入 push 和弹出 pop 操作序列的结果时，返回 <code>true</code>；否则，返回 <code>false</code> 。</p>
-<p><strong>思路</strong></p>
-<p>模拟入栈与出栈操作。</p>
-<p><strong>代码</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">validateStackSequences</span><span class="params">(<span class="type">int</span>[] pushed, <span class="type">int</span>[] popped)</span> &#123;</span><br><span class="line">        <span class="type">int</span> n=pushed.length;</span><br><span class="line">        Deque&lt;Integer&gt; stack=<span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">        <span class="comment">// popped指针</span></span><br><span class="line">        <span class="type">int</span> index=<span class="number">0</span>;</span><br><span class="line">        <span class="comment">// pushed指针</span></span><br><span class="line">        <span class="type">int</span> id=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(id&lt;n||index&lt;n)&#123;</span><br><span class="line">            <span class="comment">// 栈空或栈顶元素不等于出栈元素</span></span><br><span class="line">            <span class="keyword">if</span>(stack.isEmpty()||stack.peek()!=popped[index])&#123;</span><br><span class="line">                <span class="comment">// 若元素已经全部入栈，返回false</span></span><br><span class="line">                <span class="keyword">if</span>(id&gt;=n) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">                <span class="comment">// 否则将元素入栈</span></span><br><span class="line">                <span class="keyword">else</span> stack.push(pushed[id++]);</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="comment">// 栈顶元素等于出栈元素，出栈</span></span><br><span class="line">                stack.pop();</span><br><span class="line">                <span class="comment">// popped指针后移</span></span><br><span class="line">                index++;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="2-4-用栈操作构建数组"><a href="#2-4-用栈操作构建数组" class="headerlink" title="2.4 用栈操作构建数组"></a>2.4 用栈操作构建数组</h3><p>给你一个数组 <code>target</code> 和一个整数 <code>n</code>。每次迭代，需要从 <code>list = &#123; 1 , 2 , 3 ..., n &#125;</code> 中依次读取一个数字。</p>
-<p>请使用下述操作来构建目标数组 <code>target</code> ：</p>
-<ul>
-<li><code>&quot;Push&quot;</code>：从 <code>list</code> 中读取一个新元素， 并将其推入数组中。</li>
-<li><code>&quot;Pop&quot;</code>：删除数组中的最后一个元素。</li>
-<li>如果目标数组构建完成，就停止读取更多元素。</li>
-</ul>
-<p>题目数据保证目标数组严格递增，并且只包含 <code>1</code> 到 <code>n</code> 之间的数字。</p>
-<p>请返回构建目标数组所用的操作序列。如果存在多个可行方案，返回任一即可。</p>
-<p><strong>思路</strong></p>
-<p>按照题意进行栈模拟即可</p>
-<p><strong>代码</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> List&lt;String&gt; <span class="title function_">buildArray</span><span class="params">(<span class="type">int</span>[] target, <span class="type">int</span> n)</span> &#123;</span><br><span class="line">        <span class="comment">// 结果数组</span></span><br><span class="line">        List&lt;String&gt; cnt=<span class="keyword">new</span> <span class="title class_">ArrayList</span>&lt;&gt;();</span><br><span class="line">        <span class="comment">// push和pop</span></span><br><span class="line">        String push=<span class="string">&quot;Push&quot;</span>,pop=<span class="string">&quot;Pop&quot;</span>;</span><br><span class="line">        <span class="type">int</span> len=target.length,id=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)&#123;</span><br><span class="line">            <span class="comment">// 若target数组已遍历完，则返回结果</span></span><br><span class="line">            <span class="keyword">if</span>(id==len) <span class="keyword">return</span> cnt;</span><br><span class="line">            <span class="comment">// 将当前元素入栈</span></span><br><span class="line">            cnt.add(push);</span><br><span class="line">            <span class="comment">// 若当前元素在目标数组中，则指针后移</span></span><br><span class="line">            <span class="keyword">if</span>(i==target[id])&#123;</span><br><span class="line">                id++;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;<span class="comment">// 否则将当前元素出栈</span></span><br><span class="line">                cnt.add(pop);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> cnt;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="3-表达式求值"><a href="#3-表达式求值" class="headerlink" title="3. 表达式求值"></a>3. 表达式求值</h2><h3 id="3-1-逆波兰表达式求值"><a href="#3-1-逆波兰表达式求值" class="headerlink" title="3.1 逆波兰表达式求值"></a>3.1 逆波兰表达式求值</h3><p>给你一个字符串数组 <code>tokens</code> ，表示一个根据 <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E9%80%86%E6%B3%A2%E5%85%B0%E5%BC%8F/128437">逆波兰表示法</a> 表示的算术表达式。</p>
-<p>请你计算该表达式。返回一个表示表达式值的整数。</p>
-<p><strong>注意：</strong></p>
-<ul>
-<li>有效的算符为 <code>&#39;+&#39;</code>、<code>&#39;-&#39;</code>、<code>&#39;*&#39;</code> 和 <code>&#39;/&#39;</code> 。</li>
-<li>每个操作数（运算对象）都可以是一个整数或者另一个表达式。</li>
-<li>两个整数之间的除法总是 <strong>向零截断</strong> 。</li>
-<li>表达式中不含除零运算。</li>
-<li>输入是一个根据逆波兰表示法表示的算术表达式。</li>
-<li>答案及所有中间计算结果可以用 <strong>32 位</strong> 整数表示。</li>
-</ul>
-<p><strong>逆波兰表达式：</strong></p>
-<p>逆波兰表达式是一种后缀表达式，所谓后缀就是指算符写在后面。</p>
-<ul>
-<li>平常使用的算式则是一种中缀表达式，如 <code>( 1 + 2 ) * ( 3 + 4 )</code> 。</li>
-<li>该算式的逆波兰表达式写法为 <code>( ( 1 2 + ) ( 3 4 + ) * )</code> 。</li>
-</ul>
-<p>逆波兰表达式主要有以下两个优点：</p>
-<ul>
-<li>去掉括号后表达式无歧义，上式即便写成 <code>1 2 + 3 4 + * </code>也可以依据次序计算出正确结果。</li>
-<li>适合用栈操作运算：遇到数字则入栈；遇到算符则取出栈顶两个数字进行计算，并将结果压入栈中。</li>
-</ul>
-<p><strong>思路</strong></p>
-<p>栈模拟，遇到操作数则将其入栈，遇到运算符则运算，并将结果入栈。</p>
-<p><strong>代码</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">evalRPN</span><span class="params">(String[] tokens)</span> &#123;</span><br><span class="line">        Deque&lt;Integer&gt; op=<span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">        <span class="type">int</span> x=<span class="number">0</span>,y=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(String token:tokens)&#123;</span><br><span class="line">            <span class="comment">// 判断是否为运算符</span></span><br><span class="line">            <span class="keyword">if</span>(token.equals(<span class="string">&quot;+&quot;</span>)||token.equals(<span class="string">&quot;-&quot;</span>)||token.equals(<span class="string">&quot;*&quot;</span>)||token.equals(<span class="string">&quot;/&quot;</span>))&#123;</span><br><span class="line">                <span class="comment">// 运算</span></span><br><span class="line">                <span class="keyword">switch</span>(token.charAt(<span class="number">0</span>))&#123;</span><br><span class="line">                    <span class="keyword">case</span> <span class="string">&#x27;+&#x27;</span>:op.push(op.poll()+op.poll());<span class="keyword">break</span>;</span><br><span class="line">                    <span class="keyword">case</span> <span class="string">&#x27;-&#x27;</span>:x=op.poll();y=op.poll();op.push(y-x);<span class="keyword">break</span>;</span><br><span class="line">                    <span class="keyword">case</span> <span class="string">&#x27;*&#x27;</span>:op.push(op.poll()*op.poll());<span class="keyword">break</span>;</span><br><span class="line">                    <span class="keyword">case</span> <span class="string">&#x27;/&#x27;</span>:x=op.poll();y=op.poll();op.push(y/x);<span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;<span class="comment">// 操作数直接入栈</span></span><br><span class="line">                op.push(Integer.parseInt(token));</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> op.poll();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="3-2-基本计算器-II"><a href="#3-2-基本计算器-II" class="headerlink" title="3.2 基本计算器 II"></a>3.2 基本计算器 II</h3><p>给你一个字符串表达式 <code>s</code> ，请你实现一个基本计算器来计算并返回它的值。</p>
-<p>整数除法仅保留整数部分。</p>
-<p>你可以假设给定的表达式总是有效的。所有中间结果将在 <code>[-231, 231 - 1]</code> 的范围内。</p>
-<p><strong>注意：</strong>不允许使用任何将字符串作为数学表达式计算的内置函数，比如 <code>eval()</code> 。</p>
-<p><strong>思路</strong></p>
-<p>栈模拟，由于表达式中运算符仅有加减乘除，操作数均为非负数，对于加减操作，可以直接将对应操作数推入栈中；对于乘除操作，则推出栈顶元素进行运算后再将结果推入栈中。</p>
-<p><strong>代码</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">calculate</span><span class="params">(String s)</span> &#123;</span><br><span class="line">        <span class="type">int</span> n=s.length();</span><br><span class="line">        Deque&lt;Integer&gt; cnt=<span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">        <span class="comment">// 初始状态为非负数，即+</span></span><br><span class="line">        <span class="type">char</span> pre=<span class="string">&#x27;+&#x27;</span>;</span><br><span class="line">        <span class="type">int</span> num=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            <span class="keyword">if</span>(Character.isDigit(s.charAt(i)))&#123;</span><br><span class="line">                num=num*<span class="number">10</span>+s.charAt(i)-<span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="comment">// 若为’ ‘，不执行</span></span><br><span class="line">            <span class="comment">// 若i==n-1，说明已到末尾，进行最终运算</span></span><br><span class="line">            <span class="keyword">if</span>(!Character.isDigit(s.charAt(i))&amp;&amp;s.charAt(i)!=<span class="string">&#x27; &#x27;</span>||i==n-<span class="number">1</span>)&#123;</span><br><span class="line">                <span class="comment">// 每次对数字前的运算符进行运算，而非对当前运算符运算</span></span><br><span class="line">                <span class="keyword">switch</span>(pre)&#123;</span><br><span class="line">                    <span class="keyword">case</span> <span class="string">&#x27;+&#x27;</span>:cnt.push(num);<span class="keyword">break</span>;</span><br><span class="line">                    <span class="keyword">case</span> <span class="string">&#x27;-&#x27;</span>:cnt.push(-num);<span class="keyword">break</span>;</span><br><span class="line">                    <span class="keyword">case</span> <span class="string">&#x27;*&#x27;</span>:cnt.push(cnt.pop()*num);<span class="keyword">break</span>;</span><br><span class="line">                    <span class="keyword">case</span> <span class="string">&#x27;/&#x27;</span>:cnt.push(cnt.pop()/num);<span class="keyword">break</span>;</span><br><span class="line">                &#125;</span><br><span class="line">                pre=s.charAt(i);</span><br><span class="line">                num=<span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">        <span class="comment">// 由于加减操作是直接将操作数推入栈中，需要将栈中数字累加得到结果</span></span><br><span class="line">        <span class="keyword">while</span>(!cnt.isEmpty())&#123;</span><br><span class="line">            ans+=cnt.poll();</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="3-3-基本计算器"><a href="#3-3-基本计算器" class="headerlink" title="3.3 基本计算器"></a>3.3 基本计算器</h3><p>给你一个字符串表达式 <code>s</code> ，请你实现一个基本计算器来计算并返回它的值。</p>
-<p>注意:不允许使用任何将字符串作为数学表达式计算的内置函数，比如 <code>eval()</code> 。</p>
-<p><strong>思路</strong></p>
-<p>思路与上一题解类似，表达式中的运算符只有加减，对于左括号，存储它前面的运算符号，对于右括号，直接出栈即可。</p>
-<p><strong>代码</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">calculate</span><span class="params">(String s)</span> &#123;</span><br><span class="line">        <span class="type">int</span> n=s.length();</span><br><span class="line">        <span class="type">int</span> i=<span class="number">0</span>;</span><br><span class="line">        Deque&lt;Integer&gt; cnt=<span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">        <span class="type">int</span> flag=<span class="number">1</span>;</span><br><span class="line">        <span class="comment">// 初始化为正</span></span><br><span class="line">        cnt.push(flag);</span><br><span class="line">        <span class="type">int</span> answer=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">while</span>(i&lt;n)&#123;</span><br><span class="line">            <span class="keyword">if</span>(s.charAt(i)==<span class="string">&#x27; &#x27;</span>)&#123;<span class="comment">// 空格跳过</span></span><br><span class="line">                i++;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(s.charAt(i)==<span class="string">&#x27;+&#x27;</span>)&#123;<span class="comment">// 取当前栈顶元素符号</span></span><br><span class="line">                flag=cnt.peek();</span><br><span class="line">                i++;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(s.charAt(i)==<span class="string">&#x27;-&#x27;</span>)&#123;<span class="comment">// 取当前栈顶元素符号的相反数</span></span><br><span class="line">                flag=-cnt.peek();</span><br><span class="line">                i++;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(s.charAt(i)==<span class="string">&#x27;(&#x27;</span>)&#123;<span class="comment">// 将括号前的元素符号入栈</span></span><br><span class="line">                cnt.push(flag);</span><br><span class="line">                i++;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(s.charAt(i)==<span class="string">&#x27;)&#x27;</span>)&#123;<span class="comment">// 括号内运算结束，出栈</span></span><br><span class="line">                cnt.pop();</span><br><span class="line">                i++;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="comment">// 运算</span></span><br><span class="line">                <span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">                <span class="keyword">while</span>(i&lt;n&amp;&amp;Character.isDigit(s.charAt(i)))&#123;</span><br><span class="line">                    ans=ans*<span class="number">10</span>+s.charAt(i)-<span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">                    i++;</span><br><span class="line">                &#125;</span><br><span class="line">                answer+=flag*ans;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> answer;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="4-队列的实现"><a href="#4-队列的实现" class="headerlink" title="4. 队列的实现"></a>4. 队列的实现</h2><h3 id="4-1-设计循环队列"><a href="#4-1-设计循环队列" class="headerlink" title="4.1 设计循环队列"></a>4.1 设计循环队列</h3><p>设计你的循环队列实现。 循环队列是一种线性数据结构，其操作表现基于 FIFO（先进先出）原则并且队尾被连接在队首之后以形成一个循环。它也被称为“环形缓冲器”。</p>
-<p>循环队列的一个好处是我们可以利用这个队列之前用过的空间。在一个普通队列里，一旦一个队列满了，我们就不能插入下一个元素，即使在队列前面仍有空间。但是使用循环队列，我们能使用这些空间去存储新的值。</p>
-<p>你的实现应该支持如下操作：</p>
-<ul>
-<li><code>MyCircularQueue(k)</code>: 构造器，设置队列长度为 k 。</li>
-<li><code>Front</code>: 从队首获取元素。如果队列为空，返回 -1 。</li>
-<li><code>Rear</code>: 获取队尾元素。如果队列为空，返回 -1 。</li>
-<li><code>enQueue(value)</code>: 向循环队列插入一个元素。如果成功插入则返回真。</li>
-<li><code>deQueue()</code>: 从循环队列中删除一个元素。如果成功删除则返回真。</li>
-<li><code>isEmpty()</code>: 检查循环队列是否为空。</li>
-<li><code>isFull()</code>: 检查循环队列是否已满。</li>
-</ul>
-<p><strong>思路</strong></p>
-<p>通过数组或链表模拟队列。</p>
-<p>数组模拟：<code>front</code>指针指向队首，<code>tail</code>指针指向最后一个未被占用的空间，即队尾之后。</p>
-<p>注意：数组模拟时注意队列为空与队列已满的判断条件。</p>
-<p><strong>代码</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyCircularQueue</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> front;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> tail;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> size;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span>[] queue;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyCircularQueue</span><span class="params">(<span class="type">int</span> k)</span> &#123;</span><br><span class="line">        <span class="comment">// 初始化容量为k+1，因为tail指向最后一个不被占用的空间</span></span><br><span class="line">        <span class="comment">// 即数组需要多一个元素位置，这样在队列满时，tail才能指向最后剩余的空间</span></span><br><span class="line">        size=k+<span class="number">1</span>;</span><br><span class="line">        queue=<span class="keyword">new</span> <span class="title class_">int</span>[size];</span><br><span class="line">        front=<span class="number">0</span>;</span><br><span class="line">        tail=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">enQueue</span><span class="params">(<span class="type">int</span> value)</span> &#123;</span><br><span class="line">        <span class="comment">// 判断队列是否已满</span></span><br><span class="line">        <span class="keyword">if</span>(isFull())&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 插入队列中</span></span><br><span class="line">        queue[tail]=value;</span><br><span class="line">        <span class="comment">// 队尾指针后移</span></span><br><span class="line">        <span class="comment">// （tail+1）%size保证tail指针不越界</span></span><br><span class="line">        tail=(tail+<span class="number">1</span>)%size;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">deQueue</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 判断队列是否为空</span></span><br><span class="line">        <span class="keyword">if</span>(isEmpty())&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 移除队首元素即队首指针后移一位</span></span><br><span class="line">        <span class="comment">// 处理了队首指针越界问题</span></span><br><span class="line">        front=(front+<span class="number">1</span>)%size;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">Front</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 判断队列是否为空</span></span><br><span class="line">        <span class="keyword">if</span>(isEmpty())&#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 返回队首元素</span></span><br><span class="line">        <span class="keyword">return</span> queue[front];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">Rear</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 判断队列是否为空</span></span><br><span class="line">        <span class="keyword">if</span>(isEmpty())&#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// tail指向的是未使用的空间，即它的前一个位置才是队尾元素</span></span><br><span class="line">        <span class="comment">// （tail-1+size）%size防止tail指针越界（tail可能小于0）</span></span><br><span class="line">        <span class="keyword">return</span> queue[(tail-<span class="number">1</span>+size)%size];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">isEmpty</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 判断队列是否为空</span></span><br><span class="line">        <span class="comment">// 即队首==队尾</span></span><br><span class="line">        <span class="keyword">return</span> front==tail;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">isFull</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 判断队列是否已满</span></span><br><span class="line">        <span class="comment">// 即队尾指针的后一位置是否是队首</span></span><br><span class="line">        <span class="keyword">return</span> (tail+<span class="number">1</span>)%size==front;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your MyCircularQueue object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * MyCircularQueue obj = new MyCircularQueue(k);</span></span><br><span class="line"><span class="comment"> * boolean param_1 = obj.enQueue(value);</span></span><br><span class="line"><span class="comment"> * boolean param_2 = obj.deQueue();</span></span><br><span class="line"><span class="comment"> * int param_3 = obj.Front();</span></span><br><span class="line"><span class="comment"> * int param_4 = obj.Rear();</span></span><br><span class="line"><span class="comment"> * boolean param_5 = obj.isEmpty();</span></span><br><span class="line"><span class="comment"> * boolean param_6 = obj.isFull();</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="4-2-设计循环双端队列"><a href="#4-2-设计循环双端队列" class="headerlink" title="4.2 设计循环双端队列"></a>4.2 设计循环双端队列</h3><p>设计实现双端队列。</p>
-<p>实现 <code>MyCircularDeque</code> 类:</p>
-<ul>
-<li><code>MyCircularDeque(int k)</code> ：构造函数,双端队列最大为 <code>k</code> 。</li>
-<li><code>boolean insertFront()</code>：将一个元素添加到双端队列头部。 如果操作成功返回 <code>true</code> ，否则返回 <code>false</code> 。</li>
-<li><code>boolean insertLast()</code> ：将一个元素添加到双端队列尾部。如果操作成功返回 <code>true</code> ，否则返回 <code>false</code> 。</li>
-<li><code>boolean deleteFront()</code> ：从双端队列头部删除一个元素。 如果操作成功返回 <code>true</code> ，否则返回 <code>false</code> 。</li>
-<li><code>boolean deleteLast()</code> ：从双端队列尾部删除一个元素。如果操作成功返回 <code>true</code> ，否则返回 <code>false</code> 。</li>
-<li><code>int getFront()</code> )：从双端队列头部获得一个元素。如果双端队列为空，返回 <code>-1</code> 。</li>
-<li><code>int getRear()</code> ：获得双端队列的最后一个元素。 如果双端队列为空，返回 <code>-1</code> 。</li>
-<li><code>boolean isEmpty()</code> ：若双端队列为空，则返回 <code>true</code> ，否则返回 <code>false</code> 。</li>
-<li><code>boolean isFull()</code> ：若双端队列满了，则返回 <code>true</code> ，否则返回 <code>false</code> 。</li>
-</ul>
-<p><strong>思路</strong></p>
-<p>双端队列模拟，思路同题解一。</p>
-<p><strong>代码</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyCircularDeque</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> front;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> tail;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span> size;</span><br><span class="line">    <span class="keyword">private</span> <span class="type">int</span>[] deque;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyCircularDeque</span><span class="params">(<span class="type">int</span> k)</span> &#123;</span><br><span class="line">        size=k+<span class="number">1</span>;</span><br><span class="line">        deque=<span class="keyword">new</span> <span class="title class_">int</span>[size];</span><br><span class="line">        front=tail=<span class="number">0</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">insertFront</span><span class="params">(<span class="type">int</span> value)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span>(isFull())&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        front=(front-<span class="number">1</span>+size)%size;</span><br><span class="line">        deque[front]=value;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">insertLast</span><span class="params">(<span class="type">int</span> value)</span> &#123;</span><br><span class="line">        <span class="keyword">if</span>(isFull())&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        deque[tail]=value;</span><br><span class="line">        tail=(tail+<span class="number">1</span>)%size;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">deleteFront</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">if</span>(isEmpty())&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        front=(front+<span class="number">1</span>)%size;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">deleteLast</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">if</span>(isEmpty())&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        tail=(tail-<span class="number">1</span>+size)%size;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getFront</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">if</span>(isEmpty())&#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> deque[front];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">getRear</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">if</span>(isEmpty())&#123;</span><br><span class="line">            <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> deque[(tail-<span class="number">1</span>+size)%size];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">isEmpty</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> front==tail;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">isFull</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> (tail+<span class="number">1</span>)%size==front;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your MyCircularDeque object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * MyCircularDeque obj = new MyCircularDeque(k);</span></span><br><span class="line"><span class="comment"> * boolean param_1 = obj.insertFront(value);</span></span><br><span class="line"><span class="comment"> * boolean param_2 = obj.insertLast(value);</span></span><br><span class="line"><span class="comment"> * boolean param_3 = obj.deleteFront();</span></span><br><span class="line"><span class="comment"> * boolean param_4 = obj.deleteLast();</span></span><br><span class="line"><span class="comment"> * int param_5 = obj.getFront();</span></span><br><span class="line"><span class="comment"> * int param_6 = obj.getRear();</span></span><br><span class="line"><span class="comment"> * boolean param_7 = obj.isEmpty();</span></span><br><span class="line"><span class="comment"> * boolean param_8 = obj.isFull();</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="5-栈和队列相互实现"><a href="#5-栈和队列相互实现" class="headerlink" title="5. 栈和队列相互实现"></a>5. 栈和队列相互实现</h2><h3 id="5-1-用队列实现栈"><a href="#5-1-用队列实现栈" class="headerlink" title="5.1 用队列实现栈"></a>5.1 用队列实现栈</h3><p>请你仅使用两个队列实现一个后入先出（LIFO）的栈，并支持普通栈的全部四种操作（<code>push</code>、<code>top</code>、<code>pop</code> 和 <code>empty</code>）。</p>
-<p>实现 <code>MyStack</code> 类：</p>
-<ul>
-<li><code>void push(int x)</code> 将元素 x 压入栈顶。</li>
-<li><code>int pop()</code> 移除并返回栈顶元素。</li>
-<li><code>int top()</code> 返回栈顶元素。</li>
-<li><code>boolean empty()</code> 如果栈是空的，返回 <code>true</code> ；否则，返回 <code>false</code> 。</li>
-</ul>
-<p><strong>注意：</strong></p>
-<ul>
-<li>你只能使用队列的基本操作 —— 也就是 <code>push to back</code>、<code>peek/pop from front</code>、<code>size</code> 和 <code>is empty</code> 这些操作。</li>
-<li>你所使用的语言也许不支持队列。 你可以使用 list （列表）或者 deque（双端队列）来模拟一个队列 , 只要是标准的队列操作即可。</li>
-</ul>
-<p><strong>思路</strong></p>
-<p>维护两个队列，<code>outStack</code>存储栈内元素，<code>inStack</code>作为辅助队列，辅助入栈。</p>
-<p>每次进行入栈操作时，先将其插入<code>inStack</code>中，然后再将<code>outStack</code>中元素依次插入<code>inStack</code>中，再将二者交换，即实现了栈。</p>
-<p><strong>代码</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyStack</span> &#123;</span><br><span class="line">    Deque&lt;Integer&gt; inStack;</span><br><span class="line">    Deque&lt;Integer&gt; outStack;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyStack</span><span class="params">()</span> &#123;</span><br><span class="line">        inStack=<span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">        outStack=<span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">push</span><span class="params">(<span class="type">int</span> x)</span> &#123;</span><br><span class="line">        <span class="comment">// 加入辅助队列</span></span><br><span class="line">        inStack.offer(x);</span><br><span class="line">        <span class="comment">// 将原来栈中元素加入辅助队列中</span></span><br><span class="line">        <span class="keyword">while</span>(!outStack.isEmpty())&#123;</span><br><span class="line">            inStack.offer(outStack.poll());</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 交换两者指针，实现栈</span></span><br><span class="line">        Deque&lt;Integer&gt; tmp=outStack;</span><br><span class="line">        outStack=inStack;</span><br><span class="line">        inStack=tmp;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">pop</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> outStack.poll();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">top</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> outStack.peek();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">empty</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> outStack.isEmpty();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your MyStack object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * MyStack obj = new MyStack();</span></span><br><span class="line"><span class="comment"> * obj.push(x);</span></span><br><span class="line"><span class="comment"> * int param_2 = obj.pop();</span></span><br><span class="line"><span class="comment"> * int param_3 = obj.top();</span></span><br><span class="line"><span class="comment"> * boolean param_4 = obj.empty();</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
-
-<hr>
-<h3 id="5-2-用栈实现队列"><a href="#5-2-用栈实现队列" class="headerlink" title="5.2 用栈实现队列"></a>5.2 用栈实现队列</h3><p>请你仅使用两个栈实现先入先出队列。队列应当支持一般队列支持的所有操作（<code>push</code>、<code>pop</code>、<code>peek</code>、<code>empty</code>）：</p>
-<p>实现 <code>MyQueue</code> 类：</p>
-<ul>
-<li><code>void push(int x)</code> 将元素 x 推到队列的末尾</li>
-<li><code>int pop()</code> 从队列的开头移除并返回元素</li>
-<li><code>int peek()</code> 返回队列开头的元素</li>
-<li><code>boolean empty()</code> 如果队列为空，返回 <code>true</code> ；否则，返回 <code>false</code></li>
-</ul>
-<p><strong>说明：</strong></p>
-<ul>
-<li>你 <strong>只能</strong> 使用标准的栈操作 —— 也就是只有 <code>push to top</code>, <code>peek/pop from top</code>, <code>size</code>, 和 <code>is empty</code> 操作是合法的。</li>
-<li>你所使用的语言也许不支持栈。你可以使用 list 或者 deque（双端队列）来模拟一个栈，只要是标准的栈操作即可。</li>
-</ul>
-<p><strong>思路</strong></p>
-<p>维护两个栈，一个栈用于输入，一个用于输出。</p>
-<p><strong>代码</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">MyQueue</span> &#123;</span><br><span class="line">    Deque&lt;Integer&gt; inQueue;</span><br><span class="line">    Deque&lt;Integer&gt; outQueue;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyQueue</span><span class="params">()</span> &#123;</span><br><span class="line">        inQueue=<span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">        outQueue=<span class="keyword">new</span> <span class="title class_">LinkedList</span>&lt;&gt;();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="keyword">void</span> <span class="title function_">push</span><span class="params">(<span class="type">int</span> x)</span> &#123;</span><br><span class="line">        <span class="comment">// 入栈</span></span><br><span class="line">        inQueue.push(x);</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">pop</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 将输入栈中的元素依次加入输出栈中</span></span><br><span class="line">        <span class="comment">// 这样使得栈顶元素变为了栈底元素，即实现了队列</span></span><br><span class="line">        <span class="keyword">if</span>(outQueue.isEmpty())&#123;</span><br><span class="line">            <span class="keyword">while</span>(!inQueue.isEmpty())&#123;</span><br><span class="line">                outQueue.push(inQueue.pop());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> outQueue.pop();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">peek</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 将输入栈中的元素依次加入输出栈中</span></span><br><span class="line">        <span class="comment">// 这样使得栈顶元素变为了栈底元素，即实现了队列</span></span><br><span class="line">        <span class="keyword">if</span>(outQueue.isEmpty())&#123;</span><br><span class="line">            <span class="keyword">while</span>(!inQueue.isEmpty())&#123;</span><br><span class="line">                outQueue.push(inQueue.pop());</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> outQueue.peek();</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">public</span> <span class="type">boolean</span> <span class="title function_">empty</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="comment">// 判断输入栈和输出栈是否同时为空</span></span><br><span class="line">        <span class="keyword">return</span> inQueue.isEmpty()&amp;&amp;outQueue.isEmpty();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Your MyQueue object will be instantiated and called as such:</span></span><br><span class="line"><span class="comment"> * MyQueue obj = new MyQueue();</span></span><br><span class="line"><span class="comment"> * obj.push(x);</span></span><br><span class="line"><span class="comment"> * int param_2 = obj.pop();</span></span><br><span class="line"><span class="comment"> * int param_3 = obj.peek();</span></span><br><span class="line"><span class="comment"> * boolean param_4 = obj.empty();</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
-
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
 
   
 
@@ -647,9 +305,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/LeetCode/%E7%BA%BF%E6%80%A7%E8%A1%A8/" itemprop="url">线性表</a></h1>
+          <h1 class="post-title" itemprop="name headline">线性表</h1>
         
 
         <div class="post-meta">
@@ -721,9 +377,7 @@
       
 
       
-        
-          
-            <h1 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h1><h2 id="1-顺序表及其应用"><a href="#1-顺序表及其应用" class="headerlink" title="1. 顺序表及其应用"></a>1. 顺序表及其应用</h2><h3 id="1-1-二进制求和"><a href="#1-1-二进制求和" class="headerlink" title="1.1 二进制求和"></a>1.1 二进制求和</h3><p>给你两个二进制字符串 <code>a</code> 和 <code>b</code> ，以二进制字符串的形式返回它们的和。 </p>
+        <h1 id="线性表"><a href="#线性表" class="headerlink" title="线性表"></a>线性表</h1><h2 id="1-顺序表及其应用"><a href="#1-顺序表及其应用" class="headerlink" title="1. 顺序表及其应用"></a>1. 顺序表及其应用</h2><h3 id="1-1-二进制求和"><a href="#1-1-二进制求和" class="headerlink" title="1.1 二进制求和"></a>1.1 二进制求和</h3><p>给你两个二进制字符串 <code>a</code> 和 <code>b</code> ，以二进制字符串的形式返回它们的和。 </p>
 <p><strong>思路</strong></p>
 <p>进行二进制位运算，本位和<code>s=a^b^c</code>，进位<code>c=(a&amp;b)|(a&amp;c)|(b&amp;c)</code>。</p>
 <p>注意处理边界问题。</p>
@@ -994,8 +648,6 @@
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * Definition for singly-linked list.</span></span><br><span class="line"><span class="comment"> * public class ListNode &#123;</span></span><br><span class="line"><span class="comment"> *     int val;</span></span><br><span class="line"><span class="comment"> *     ListNode next;</span></span><br><span class="line"><span class="comment"> *     ListNode() &#123;&#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int val) &#123; this.val = val; &#125;</span></span><br><span class="line"><span class="comment"> *     ListNode(int val, ListNode next) &#123; this.val = val; this.next = next; &#125;</span></span><br><span class="line"><span class="comment"> * &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> ListNode <span class="title function_">mergeKLists</span><span class="params">(ListNode[] lists)</span> &#123;</span><br><span class="line">        <span class="comment">// 分治合并</span></span><br><span class="line">        <span class="keyword">return</span> mergeList(lists,<span class="number">0</span>,lists.length-<span class="number">1</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> ListNode <span class="title function_">mergeList</span><span class="params">(ListNode[] lists,<span class="type">int</span> left,<span class="type">int</span> right)</span>&#123;</span><br><span class="line">        <span class="comment">// 若left==right，返回当前链表</span></span><br><span class="line">        <span class="keyword">if</span>(left==right)&#123;</span><br><span class="line">            <span class="keyword">return</span> lists[left];</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 若left&gt;right，返回null</span></span><br><span class="line">        <span class="keyword">if</span>(left&gt;right)&#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">null</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 取中间数，分治</span></span><br><span class="line">        <span class="type">int</span> mid=(left+right)/<span class="number">2</span>;</span><br><span class="line">        <span class="keyword">return</span> merge(mergeList(lists,left,mid),mergeList(lists,mid+<span class="number">1</span>,right));</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// 合并两个链表</span></span><br><span class="line">    <span class="keyword">public</span> ListNode <span class="title function_">merge</span><span class="params">(ListNode list1,ListNode list2)</span>&#123;</span><br><span class="line">        <span class="keyword">if</span>(list1==<span class="literal">null</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> list2;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(list2==<span class="literal">null</span>)&#123;</span><br><span class="line">            <span class="keyword">return</span> list1;</span><br><span class="line">        &#125;</span><br><span class="line">        ListNode root=<span class="keyword">new</span> <span class="title class_">ListNode</span>(<span class="number">0</span>);</span><br><span class="line">        ListNode p=root;</span><br><span class="line">        <span class="keyword">while</span>(list1!=<span class="literal">null</span>||list2!=<span class="literal">null</span>)&#123;</span><br><span class="line">            <span class="keyword">if</span>(list1==<span class="literal">null</span>)&#123;</span><br><span class="line">                p.next=list2;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span> <span class="keyword">if</span>(list2==<span class="literal">null</span>)&#123;</span><br><span class="line">                p.next=list1;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                <span class="keyword">if</span>(list1.val&lt;list2.val)&#123;</span><br><span class="line">                    p.next=list1;</span><br><span class="line">                    list1=list1.next;</span><br><span class="line">                &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">                    p.next=list2;</span><br><span class="line">                    list2=list2.next;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            p=p.next;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> root.next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
-          
-        
       
     </div>
     
@@ -1010,199 +662,42 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://example.com/LeetCode/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Resphoer's Space">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/LeetCode/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1/" itemprop="url">基础算法设计</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2023-03-16T21:46:03+08:00">
-                2023-03-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/LeetCode/" itemprop="url" rel="index">
-                    <span itemprop="name">LeetCode</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/%E7%AE%97%E6%B3%95/" rel="tag"># 算法</a>
           
-
+            <a href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag"># 数据结构</a>
           
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="基础算法设计"><a href="#基础算法设计" class="headerlink" title="基础算法设计"></a>基础算法设计</h1><h2 id="1-整数反转"><a href="#1-整数反转" class="headerlink" title="1.整数反转"></a>1.整数反转</h2><p>给你一个 32 位的有符号整数 <code>x</code> ，返回将 <code>x</code> 中的数字部分反转后的结果。</p>
-<p>如果反转后整数超过 32 位的有符号整数的范围 [$−2^{31}$,  $2^{31}$ − $1$] ，就返回 0。</p>
-<p><strong>假设环境不允许存储 64 位整数（有符号或无符号）。</strong></p>
-<p><strong>思路</strong></p>
-<p>尝试使用构造字符串或者栈处理，但是题设环境不允许存储64位整数，最终无法判断是否在32位整数范围内。</p>
-<p>数学方法解决，证明参考LeetCode官方题解</p>
-<p><strong>代码</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">reverse</span><span class="params">(<span class="type">int</span> x)</span> &#123;</span><br><span class="line">        <span class="type">int</span> ans=<span class="number">0</span>;<span class="comment">//反转后的数</span></span><br><span class="line">        <span class="keyword">while</span>(x!=<span class="number">0</span>)&#123;</span><br><span class="line">            <span class="comment">//判断ans是否超出范围</span></span><br><span class="line">            <span class="keyword">if</span>(ans&lt;Integer.MIN_VALUE/<span class="number">10</span>||ans&gt;Integer.MAX_VALUE/<span class="number">10</span>)&#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="type">int</span> tmp=x%<span class="number">10</span>;<span class="comment">//取模，即取个位数</span></span><br><span class="line">            x/=<span class="number">10</span>;</span><br><span class="line">            ans=ans*<span class="number">10</span>+tmp;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="2-加一"><a href="#2-加一" class="headerlink" title="2.加一"></a>2.加一</h2><p>给定一个由 <strong>整数</strong> 组成的 <strong>非空</strong> 数组所表示的非负整数，在该数的基础上加一。</p>
-<p>最高位数字存放在数组的首位， 数组中每个元素只存储<strong>单个</strong>数字。</p>
-<p>你可以假设除了整数 0 之外，这个整数不会以零开头。</p>
-<p><strong>思路</strong></p>
-<p>数组末尾加一，判断是否有进位，若有则进位，若无则直接返回，以此类推。</p>
-<p>注意：加一后有可能位数不变，也有可能位数加一，需要特殊处理</p>
-<p><strong>代码</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span>[] plusOne(<span class="type">int</span>[] digits) &#123;</span><br><span class="line">        <span class="type">int</span> n=digits.length;</span><br><span class="line">        digits[n-<span class="number">1</span>]+=<span class="number">1</span>;<span class="comment">//末位加一</span></span><br><span class="line">        <span class="type">int</span> carry=<span class="number">0</span>;<span class="comment">//进位</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=n-<span class="number">1</span>;i&gt;=<span class="number">0</span>;i--)&#123;</span><br><span class="line">            <span class="type">int</span> tmp=digits[i]+carry;<span class="comment">//本位+进位</span></span><br><span class="line">            carry=tmp/<span class="number">10</span>;<span class="comment">//向前进位</span></span><br><span class="line">            digits[i]=tmp%<span class="number">10</span>;<span class="comment">//本位</span></span><br><span class="line">            <span class="comment">//判断是否还有进位，若无，则退出循环</span></span><br><span class="line">            <span class="keyword">if</span>(carry==<span class="number">0</span>)&#123;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(carry==<span class="number">0</span>) <span class="keyword">return</span> digits;<span class="comment">//carry=0，说明位数没有改变</span></span><br><span class="line">        <span class="type">int</span>[] ans=<span class="keyword">new</span> <span class="title class_">int</span>[n+<span class="number">1</span>];</span><br><span class="line">        System.arraycopy(digits,<span class="number">0</span>,ans,<span class="number">1</span>,n);<span class="comment">//位数改变处理</span></span><br><span class="line">        ans[<span class="number">0</span>]=<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="3-两数之和"><a href="#3-两数之和" class="headerlink" title="3.两数之和"></a>3.两数之和</h2><p>给定一个整数数组 <code>nums</code> 和一个整数目标值 <code>target</code>，请你在该数组中找出 和为目标值 <code>target</code>  的那 两个 整数，并返回它们的数组下标。</p>
-<p>你可以假设每种输入只会对应一个答案。但是，数组中同一个元素在答案里不能重复出现。</p>
-<p>你可以按任意顺序返回答案。</p>
-<p><strong>思路</strong></p>
-<p>使用哈希表，键为<code>nums[i]</code>，值为对应索引<code>i</code>，遍历数组，若哈希表中已经存在<code>target-nums[i]</code>，说明已经找到有效答案，若无，则将该键值对插入表中。</p>
-<p><strong>代码</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span>[] twoSum(<span class="type">int</span>[] nums, <span class="type">int</span> target) &#123;</span><br><span class="line">        Map&lt;Integer,Integer&gt; map = <span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;&gt;();<span class="comment">//哈希表</span></span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;nums.length;i++)&#123;</span><br><span class="line">            <span class="comment">//判读表中是否包含target-nums[i]</span></span><br><span class="line">            <span class="keyword">if</span>(map.containsKey(target-nums[i]))&#123;</span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">int</span>[]&#123;i,map.get(target-nums[i])&#125;;</span><br><span class="line">            &#125;</span><br><span class="line">            map.put(nums[i],i);<span class="comment">//加入哈希表中</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">new</span> <span class="title class_">int</span>[<span class="number">0</span>];<span class="comment">//无有效答案，返回空数组</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<hr>
-<h2 id="4-所有奇数长度子数组的和"><a href="#4-所有奇数长度子数组的和" class="headerlink" title="4.所有奇数长度子数组的和"></a>4.所有奇数长度子数组的和</h2><p>给你一个正整数数组 <code>arr</code> ，请你计算所有可能的奇数长度子数组的和。</p>
-<p><strong>子数组</strong> 定义为原数组中的一个连续子序列。</p>
-<p>请你返回 <code>arr</code> 中 <strong>所有奇数长度子数组的和</strong> 。</p>
-<p><strong>思路</strong></p>
-<p><strong>方法一.前缀和</strong></p>
-<p>计算前缀和，以<code>len=1</code>为起始间隔，每次<code>len+2</code>，依次累加求和。</p>
-<p><strong>代码</strong></p>
- <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">sumOddLengthSubarrays</span><span class="params">(<span class="type">int</span>[] arr)</span> &#123;</span><br><span class="line">        <span class="type">int</span> n=arr.length;</span><br><span class="line">        <span class="type">int</span>[] pre=<span class="keyword">new</span> <span class="title class_">int</span>[n+<span class="number">1</span>];</span><br><span class="line">        pre[<span class="number">0</span>]=arr[<span class="number">0</span>];</span><br><span class="line">        <span class="type">int</span> sum=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            pre[i+<span class="number">1</span>]=pre[i]+arr[i];<span class="comment">//前缀和</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            <span class="keyword">for</span>(<span class="type">int</span> len=<span class="number">1</span>;i+len&lt;=n;len+=<span class="number">2</span>)&#123;</span><br><span class="line">                sum+=pre[i+len]-pre[i];<span class="comment">//累加</span></span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><strong>方法二.数学</strong></p>
-<p>摘自LeetCode</p>
-<p><img src="/LeetCode/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1/1.jpg"></p>
-<p><strong>代码</strong></p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Solution</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="type">int</span> <span class="title function_">sumOddLengthSubarrays</span><span class="params">(<span class="type">int</span>[] arr)</span> &#123;</span><br><span class="line">        <span class="type">int</span> sum=<span class="number">0</span>;</span><br><span class="line">        <span class="type">int</span> n=arr.length;</span><br><span class="line">        <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">0</span>;i&lt;n;i++)&#123;</span><br><span class="line">            <span class="type">int</span> left=i,right=n-i-<span class="number">1</span>;<span class="comment">//左、右个数</span></span><br><span class="line">            <span class="type">int</span> l_o=(left+<span class="number">1</span>)/<span class="number">2</span>,r_o=(right+<span class="number">1</span>)/<span class="number">2</span>;<span class="comment">//两侧奇数</span></span><br><span class="line">            <span class="type">int</span> l_e=left/<span class="number">2</span>+<span class="number">1</span>,r_e=right/<span class="number">2</span>+<span class="number">1</span>;<span class="comment">//两侧偶数</span></span><br><span class="line">            sum+=arr[i]*(l_o*r_o+l_e*r_e);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> sum;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/LeetCode/%E5%9F%BA%E7%A1%80%E7%AE%97%E6%B3%95%E8%AE%BE%E8%AE%A1/" rel="next" title="基础算法设计">
+                <i class="fa fa-chevron-left"></i> 基础算法设计
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/LeetCode/%E6%A0%88%E4%B8%8E%E9%98%9F%E5%88%97/" rel="prev" title="栈与队列">
+                栈与队列 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -1212,10 +707,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -1223,6 +719,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -1243,8 +743,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1304,6 +813,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%BA%BF%E6%80%A7%E8%A1%A8"><span class="nav-number">1.</span> <span class="nav-text">线性表</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E9%A1%BA%E5%BA%8F%E8%A1%A8%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8"><span class="nav-number">1.1.</span> <span class="nav-text">1. 顺序表及其应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#1-1-%E4%BA%8C%E8%BF%9B%E5%88%B6%E6%B1%82%E5%92%8C"><span class="nav-number">1.1.1.</span> <span class="nav-text">1.1 二进制求和</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-2-%E7%A7%BB%E9%99%A4%E5%85%83%E7%B4%A0"><span class="nav-number">1.1.2.</span> <span class="nav-text">1.2 移除元素</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E6%9C%89%E9%A1%BA%E5%BA%8F%E8%A1%A8%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8"><span class="nav-number">1.2.</span> <span class="nav-text">2. 有顺序表及其应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-1-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9"><span class="nav-number">1.2.1.</span> <span class="nav-text">2.1 删除有序数组中的重复项</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-2-%E5%88%A0%E9%99%A4%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E9%A1%B9-II"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.2 删除有序数组中的重复项 II</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-3-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E6%95%B0%E7%BB%84"><span class="nav-number">1.2.3.</span> <span class="nav-text">2.3 合并两个有序数组</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-%E5%AF%BB%E6%89%BE%E4%B8%A4%E4%B8%AA%E6%AD%A3%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E4%B8%AD%E4%BD%8D%E6%95%B0"><span class="nav-number">1.2.4.</span> <span class="nav-text">2.4 寻找两个正序数组的中位数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-%E9%93%BE%E8%A1%A8%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="nav-number">1.3.</span> <span class="nav-text">3. 链表的实现</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#3-1-%E8%AE%BE%E8%AE%A1%E9%93%BE%E8%A1%A8"><span class="nav-number">1.3.1.</span> <span class="nav-text">3.1 设计链表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#3-2-%E9%93%BE%E8%A1%A8%E9%9A%8F%E6%9C%BA%E8%8A%82%E7%82%B9"><span class="nav-number">1.3.2.</span> <span class="nav-text">3.2 链表随机节点</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E5%8D%95%E9%93%BE%E8%A1%A8%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8"><span class="nav-number">1.4.</span> <span class="nav-text">4. 单链表及其应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#4-1-%E7%A7%BB%E9%99%A4%E9%93%BE%E8%A1%A8%E5%85%83%E7%B4%A0"><span class="nav-number">1.4.1.</span> <span class="nav-text">4.1 移除链表元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-%E5%88%A0%E9%99%A4%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9"><span class="nav-number">1.4.2.</span> <span class="nav-text">4.3 删除链表中的节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-3-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8"><span class="nav-number">1.4.3.</span> <span class="nav-text">4.3 反转链表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-4-%E5%8F%8D%E8%BD%AC%E9%93%BE%E8%A1%A8-II"><span class="nav-number">1.4.4.</span> <span class="nav-text">4.4 反转链表 II</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-5-%E5%A5%87%E5%81%B6%E9%93%BE%E8%A1%A8"><span class="nav-number">1.4.5.</span> <span class="nav-text">4.5 奇偶链表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-6-%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8"><span class="nav-number">1.4.6.</span> <span class="nav-text">4.6 分隔链表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-7-%E4%B8%A4%E4%B8%A4%E4%BA%A4%E6%8D%A2%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E8%8A%82%E7%82%B9"><span class="nav-number">1.4.7.</span> <span class="nav-text">4.7 两两交换链表中的节点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-8-%E9%93%BE%E8%A1%A8%E7%9A%84%E4%B8%AD%E9%97%B4%E7%BB%93%E7%82%B9"><span class="nav-number">1.4.8.</span> <span class="nav-text">4.8 链表的中间结点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-9-%E5%9B%9E%E6%96%87%E9%93%BE%E8%A1%A8"><span class="nav-number">1.4.9.</span> <span class="nav-text">4.9 回文链表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-10-%E9%87%8D%E6%8E%92%E9%93%BE%E8%A1%A8"><span class="nav-number">1.4.10.</span> <span class="nav-text">4.10 重排链表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-11-%E5%AF%B9%E9%93%BE%E8%A1%A8%E8%BF%9B%E8%A1%8C%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F"><span class="nav-number">1.4.11.</span> <span class="nav-text">4.11 对链表进行插入排序</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-12-K-%E4%B8%AA%E4%B8%80%E7%BB%84%E7%BF%BB%E8%BD%AC%E9%93%BE%E8%A1%A8"><span class="nav-number">1.4.12.</span> <span class="nav-text">4.12 K 个一组翻转链表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#4-13-%E5%88%86%E9%9A%94%E9%93%BE%E8%A1%A8"><span class="nav-number">1.4.13.</span> <span class="nav-text">4.13 分隔链表</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8%E5%8F%8A%E5%85%B6%E5%BA%94%E7%94%A8"><span class="nav-number">1.5.</span> <span class="nav-text">5. 有序链表及其应用</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#5-1-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0"><span class="nav-number">1.5.1.</span> <span class="nav-text">5.1 删除排序链表中的重复元素</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-2-%E5%88%A0%E9%99%A4%E6%8E%92%E5%BA%8F%E9%93%BE%E8%A1%A8%E4%B8%AD%E7%9A%84%E9%87%8D%E5%A4%8D%E5%85%83%E7%B4%A0-II"><span class="nav-number">1.5.2.</span> <span class="nav-text">5.2 删除排序链表中的重复元素 II</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-3-%E5%90%88%E5%B9%B6%E4%B8%A4%E4%B8%AA%E6%9C%89%E5%BA%8F%E9%93%BE%E8%A1%A8"><span class="nav-number">1.5.3.</span> <span class="nav-text">5.3 合并两个有序链表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#5-4-%E5%90%88%E5%B9%B6K%E4%B8%AA%E5%8D%87%E5%BA%8F%E9%93%BE%E8%A1%A8"><span class="nav-number">1.5.4.</span> <span class="nav-text">5.4 合并K个升序链表</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1451,6 +976,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
